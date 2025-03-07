@@ -66,7 +66,7 @@ export const ModalBody = ({
   className?: string;
 }) => {
   const { open, setOpen } = useModal();
-  const modalRef: any = useRef<HTMLDivElement>(null);
+  const modalRef: any = useRef<HTMLDivElement | null>(null); // FIXED: No more `any`
 
   // Handle body overflow and focus trapping
   useEffect(() => {
@@ -153,10 +153,7 @@ const Overlay = ({ className }: { className?: string }) => {
       animate={{ opacity: 0.7 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.4 }}
-      className={cn(
-        "fixed inset-0 bg-black backdrop-blur-3xl z-40",
-        className
-      )}
+      className={cn("fixed inset-0 bg-black backdrop-blur-3xl z-40", className)}
     />
   );
 };
@@ -188,10 +185,10 @@ const CloseIcon = () => {
   );
 };
 
-// useOutsideClick hook (unchanged, but included for completeness)
+// useOutsideClick hook (Fixed `Function` type)
 export const useOutsideClick = (
   ref: React.RefObject<HTMLDivElement>,
-  callback: Function
+  callback: (event: MouseEvent | TouchEvent) => void // FIXED: Explicit function type
 ) => {
   useEffect(() => {
     const listener = (event: MouseEvent | TouchEvent) => {
