@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Hero() {
   return (
-    <section className="h-[90vh] md:h-[820px] grid place-content-center ">
+    <section className="h-[90vh] md:h-[700px] grid place-content-center ">
       <div className="mb-5  uppercase">
         <div className=" font-extrabold text-4xl md:text-6xl mb-1 from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 ">
           Another Way

@@ -1,5 +1,5 @@
-import React from 'react';
-import { Calendar, Clock, User } from 'lucide-react';
+import React from "react";
+import { Calendar, Clock, User } from "lucide-react";
 
 interface BlogCardProps {
   title: string;
@@ -21,43 +21,43 @@ export function BlogCard({
   category,
 }: BlogCardProps) {
   return (
-    <article className="bg-secondary rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl max-w-md">
-      <div className="relative">
-        <img
+    <article className="relative bg-secondary  rounded-xl overflow-hidden shadow transition-all duration-300 hover:shadow-xl ">
+      <div className="">
+        {/* <img
           src={imageUrl}
           alt={title}
-          className="w-full h-48 object-cover"
-        />
-        <span className="absolute top-4 left-4 bg-blue-600  px-3 py-1 rounded-full text-sm font-medium">
-          {category}
-        </span>
+          className="w-full h-48 object-cover absolute -z-10"
+        /> */}
       </div>
-      
-      <div className="p-6">
-        <h2 className="text-xl font-bold  mb-2 line-clamp-2 hover:text-blue-600 transition-colors">
+
+      <div className="p-4">
+        <h2 className="text-base md:text-xl font-bold  mb-2 line-clamp-2 hover:text-blue-600 transition-colors">
           {title}
         </h2>
-        
-        <p className=" mb-4 line-clamp-2">
-          {excerpt}
-        </p>
-        
+
+        <p className="text-sm mb-4 line-clamp-2">{excerpt}</p>
+
         <div className="flex items-center gap-4 text-sm mb-4">
           <div className="flex items-center gap-1">
             <Calendar size={16} />
             <span>{date}</span>
           </div>
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-1 text-sm">
             <Clock size={16} />
             <span>{readTime}</span>
           </div>
         </div>
-        
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-full  flex items-center justify-center">
-            <User size={16} className="" />
+
+        <div className="flex items-center justify-between gap-2">
+          <div className="flex items-center">
+            <div className="w-8 h-8 rounded-full  flex items-center justify-center">
+              <User size={16} className="" />
+            </div>
+            <span className="text-sm font-medium ">{author}</span>
           </div>
-          <span className="text-sm font-medium ">{author}</span>
+          <span className="  bg-blue-600 text-white  px-3 py-1 rounded-full text-sm font-medium">
+            {category}
+          </span>
         </div>
       </div>
     </article>
