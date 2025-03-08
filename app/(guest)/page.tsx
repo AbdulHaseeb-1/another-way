@@ -1,6 +1,7 @@
 import Header from "@/components/guest/layout/header";
 import Categories from "@/components/guest/root/categories";
 import Hero from "@/components/guest/root/hero";
+import NewArticles from "@/components/guest/root/new-articles";
 import { Metadata } from "next";
 import React from "react";
 
@@ -25,9 +26,13 @@ export default function Home() {
 
         {/* Hero Section */}
         {/* ===================== */}
-        <Categories />
+        <NewArticles />
         {/* ===================== */}
 
+        {/* Hero Section */}
+        {/* ===================== */}
+        <Categories />
+        {/* ===================== */}
       </div>
     </div>
   );
