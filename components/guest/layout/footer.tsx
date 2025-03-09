@@ -18,13 +18,13 @@ export default function Footer() {
         </div>
         <div className="flex gap-4">
           <Link
-            href="#"
+            href="https://www.google.com"
             className="text-sm font-medium hover:underline underline-offset-4"
           >
             Terms
           </Link>
           <Link
-            href="#"
+            href="https://candle-king.vercel.app/"
             className="text-sm font-medium hover:underline underline-offset-4"
           >
             Privacy
