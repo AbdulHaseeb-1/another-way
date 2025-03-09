@@ -30,7 +30,7 @@ export default function Footer() {
             Privacy
           </Link>
           <Link
-            href="#"
+            href="https://localstore-git-main-abdul-haseebs-projects-c664f8ff.vercel.app/"
             className="text-sm font-medium hover:underline underline-offset-4"
           >
             Contact
