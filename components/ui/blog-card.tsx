@@ -31,7 +31,7 @@ export function BlogCard({
       </div>
 
       <div className="p-4">
-        <h2 className="text-base md:text-xl font-bold  mb-2 line-clamp-2 hover:text-blue-600 transition-colors">
+        <h2 className="text-base md:text-xl font-bold  mb-2 line-clamp-2 hover:underline transition-colors">
           {title}
         </h2>
 
@@ -55,7 +55,7 @@ export function BlogCard({
             </div>
             <span className="text-sm font-medium ">{author}</span>
           </div>
-          <span className="  bg-blue-600 text-white  px-3 py-1 rounded-full text-sm font-medium">
+          <span className=" bg-primary  text-primary-foreground  px-3 py-1 rounded-full text-sm font-medium">
             {category}
           </span>
         </div>

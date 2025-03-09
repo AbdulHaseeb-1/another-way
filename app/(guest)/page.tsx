@@ -1,7 +1,11 @@
+import Footer from "@/components/guest/layout/footer";
 import Header from "@/components/guest/layout/header";
 import Categories from "@/components/guest/root/categories";
 import Hero from "@/components/guest/root/hero";
 import NewArticles from "@/components/guest/root/new-articles";
+import NewsLetter from "@/components/guest/root/news-letter";
+import Testimonials from "@/components/guest/root/testimonials";
+import ReviewSlider from "@/components/guest/root/testimonials";
 import { Metadata } from "next";
 import React from "react";
 
@@ -32,6 +36,21 @@ export default function Home() {
         {/* Hero Section */}
         {/* ===================== */}
         <Categories />
+        {/* ===================== */}
+
+        {/* Hero Section */}
+        {/* ===================== */}
+        <Testimonials />
+        {/* ===================== */}
+
+        {/* Hero Section */}
+        {/* ===================== */}
+        <NewsLetter />
+        {/* ===================== */}
+
+        {/* Hero Section */}
+        {/* ===================== */}
+        <Footer />
         {/* ===================== */}
       </div>
     </div>
