@@ -1,5 +1,6 @@
 import React from "react";
 import { Calendar, Clock, User } from "lucide-react";
+import Link from "next/link";
 
 interface BlogCardProps {
   title: string;
@@ -31,9 +32,11 @@ export function BlogCard({
       </div>
 
       <div className="p-4">
-        <h2 className="text-base md:text-xl font-bold  mb-2 line-clamp-2 hover:underline transition-colors">
-          {title}
-        </h2>
+        <Link href={"/article/slug"}>
+          <h2 className="text-base md:text-xl font-bold  mb-2 line-clamp-2 hover:underline transition-colors">
+            {title}
+          </h2>
+        </Link>
 
         <p className="text-sm mb-4 line-clamp-2">{excerpt}</p>
 

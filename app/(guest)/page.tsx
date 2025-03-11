@@ -1,7 +1,9 @@
 import Footer from "@/components/guest/layout/footer";
 import Header from "@/components/guest/layout/header";
+import About from "@/components/guest/root/about";
 import Categories from "@/components/guest/root/categories";
 import Hero from "@/components/guest/root/hero";
+import LatestArticles from "@/components/guest/root/latest-articles";
 import NewArticles from "@/components/guest/root/new-articles";
 import NewsLetter from "@/components/guest/root/news-letter";
 import Testimonials from "@/components/guest/root/testimonials";
@@ -16,13 +18,8 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className=" p-4 ">
+    <div className=" ">
       <div className="container mx-auto">
-        {/* Navigation Section */}
-        {/* ===================== */}
-        <Header />
-        {/* ===================== */}
-
         {/* Hero Section */}
         {/* ===================== */}
         <Hero />
@@ -30,7 +27,8 @@ export default function Home() {
 
         {/* Hero Section */}
         {/* ===================== */}
-        <NewArticles />
+        <LatestArticles />
+        {/* <NewArticles /> */}
         {/* ===================== */}
 
         {/* Hero Section */}
@@ -50,7 +48,7 @@ export default function Home() {
 
         {/* Hero Section */}
         {/* ===================== */}
-        <Footer />
+        <About />
         {/* ===================== */}
       </div>
     </div>

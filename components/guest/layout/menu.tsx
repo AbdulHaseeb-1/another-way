@@ -37,7 +37,7 @@ export function NavigationMenu() {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="p-2 rounded-full  transition-colors shadow-lg"
+        className= "fixed top-4 right-4 p-2 rounded-full bg-muted transition-colors shadow-lg"
         aria-label="Toggle menu"
       >
         <Menu className="w-6 h-6 " />

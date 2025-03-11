@@ -8,12 +8,12 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
           <Link href="/" className="flex items-center space-x-2">
             <span className="h-7 w-7 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-sm">
-              B
+              AW
             </span>
-            <span className="font-bold">BlogFolio</span>
+            <span className="font-bold">Another Way</span>
           </Link>
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            &copy; {new Date().getFullYear()} BlogFolio. All rights reserved.
+            &copy; {new Date().getFullYear()} Another Way. All rights reserved.
           </p>
         </div>
         <div className="flex gap-4">

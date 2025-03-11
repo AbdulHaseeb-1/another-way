@@ -14,7 +14,7 @@ const categories: Category[] = [
 
 export default function Categories() {
   return (
-    <div className="my-10 flex flex-row flex-wrap gap-3">
+    <div className="mt-20 flex flex-row flex-wrap gap-3 ">
       {categories.map((category: Category,index:number) => {
         return <div key={index} className="  p-2 px-5 rounded-full  shadow bg-secondary ">{category.title}</div>;
       })}
