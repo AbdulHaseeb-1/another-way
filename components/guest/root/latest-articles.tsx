@@ -16,15 +16,15 @@ export default function LatestArticles() {
             <p className="text-muted-foreground">
               Stay updated with our most recent publications.
             </p>
-            <div className="space-y-6">
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="flex flex-col sm:flex-row gap-4">
+            <div className="space-y-3">
+              {[1, 2, 3].map((i) => (
+                <div key={i} className="flex flex-col sm:flex-row gap-4 border-y py-2">
                   <Image
                     src={`/images/p.png`}
                     width={250}
                     height={150}
                     alt={`Latest article ${i}`}
-                    className="aspect-video rounded-lg object-cover sm:w-[250px]"
+                    className="aspect-video  rounded-lg object-cover w-full"
                   />
                   <div className="flex flex-col justify-center space-y-2">
                     <Badge className="w-fit">Design</Badge>
@@ -45,7 +45,7 @@ export default function LatestArticles() {
               ))}
             </div>
           </div>
-          <div className="space-y-4">
+          <div className="mt-10  md:mt-0 space-y-4 ">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
               Popular This Week
             </h2>
@@ -73,9 +73,9 @@ export default function LatestArticles() {
                 </div>
               ))}
             </div>
-            <div className="pt-4">
-              <Link href="#">
-                <Button variant="outline" className="w-full">
+            <div className="pt-4 grid place-content-center">
+              <Link href="#" className="">
+                <Button variant="outline" className="w-72">
                   View All Popular Posts
                 </Button>
               </Link>

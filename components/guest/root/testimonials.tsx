@@ -71,14 +71,14 @@ export default function Testimonials() {
           >
             {[1, 2, 3, 4, 5].map((i) => (
               <div key={i} className="flex-none w-[80vw] md:w-[400px] pr-4 ">
-                <Card className="h-full text-center  bg-secondary">
+                <Card className="h-full text-center  ">
                   <CardContent className="pt-2">
                     <div className="mb-4 flex justify-center">
-                      <Avatar className="h-16 w-16 border-2 border-secondary-foreground">
-                        {/* <AvatarImage
-                          src={`/placeholder.svg?height=64&width=64&text=User+${i}`}
+                      <Avatar className="h-16 w-16 border-2 border-secondary-foreground ">
+                        <AvatarImage
+                          src={`/images/p.png`}
                           alt={`User ${i}`}
-                        /> */}
+                        />
                         <AvatarFallback>U{i}</AvatarFallback>
                       </Avatar>
                     </div>

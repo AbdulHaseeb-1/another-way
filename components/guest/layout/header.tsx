@@ -10,7 +10,7 @@ export default function Header() {
     <div className="">
       <div className="flex justify-between items-center">
         <div className="font-bold uppercase tracking-tighter">Another Way</div>
-        <div>
+        <div className="">
           <NavigationMenu />
         </div>
       </div>
